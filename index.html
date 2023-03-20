@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan JavaScript</title>
+    <script>
+        function sayHello (){
+            alert("Hello World");
+        }
+        
+    </script>
+</head>
+<body>
+    <!-- tombol yang akan memanggil function "sayHello" di head -->
+    Click Here
+    <input type="button" onclick="sayHello()" value="Klik Di Sini"><br> 
+    <script>
+        let a = 5;
+        let b = 10;
+        let hasil;
+        let number = prompt("Masukkan Angka");
+        // jika variable a == 5, maka variable a akan dikali dengan variable b
+        if (a == 5) {
+            hasil = a * b;
+            document.writeln(hasil);
+        }
+        // jika angka yang dimasukkan benar, maka sebuah pesan akan ditampilkan\
+        if (number == 5) {
+            alert("Selamat, angka Anda benar!");
+        }
+        else {
+            alert("Angka Anda salah, coba lagi");
+        }
+    </script>
+    <!-- <script>
+        // value dari variable let dapat diubah kapanpun, sementara const tidak
+        let name = "Josaphat";
+        name = "Melvin";
+        // memanggil variable nama
+        document.writeln(name);
+    </script> -->
+    <!-- <script>
+        // alert menampilkan string di web nya
+        alert("Hello World");
+        // console.log menampilkan string di dalam console nya
+        console.log("Hello World");
+    </script> -->
+</body>
+</html>

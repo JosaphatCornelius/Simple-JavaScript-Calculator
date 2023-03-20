@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ini Calculator</title>
+    <style>
+        .num1 {
+            width: 70px;
+        }
+        .num2 {
+            width: 70px;
+        }
+        .choice {
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <!-- membuat input untuk memasukkan angka-angka -->
+        <input type="text" id="num1" name="num1" placeholder="Masukkan angka pertama!">
+        <input type="text" id="num2" name="num2" placeholder="Masukkan angka kedua!">
+        <input type="text" id="choice" name="choice" placeholder="Operasi apa yang Anda inginkan?">
+        <button type="submit" onclick="calculate()">Submit</button>
+    </form>
+    <script>
+        // melakukan kalkulasi, dan mendeklarasi variable untuk dihitung
+        function calculate() {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            let choice = document.getElementById("choice").value;
+            let result;
+
+            // akan dilakukan pengoperasian berdasarkan pilihan pengguna
+            if (choice === "kali") {
+                result = num1 * num2;
+                alert("Hasil pengalian Anda adalah: " + result);
+                console.log("Hasil pengalian Anda adalah: " + result);
+            }
+            else if (choice === "tambah") {
+                result = num1 + num2;
+                alert("Hasil penambahan Anda adalah: " + result);
+                console.log("Hasil penambahan Anda adalah: " + result);
+            }
+            else if (choice === "kurang") {
+                result = num1 - num2;
+                alert("Hasil pengurangan Anda adalah: " + result);
+                console.log("Hasil pengurangan Anda adalah: " + result);
+            }
+            else if (choice === "bagi") {
+                result = num1 / num2;
+                alert("Hasil pembagian Anda adalah: " + result);
+                console.log("Hasil pembagian Anda adalah: " + result);
+            }
+            else{
+                alert("Invalid Choice, Please enter correct operation (kali, tambah, kurang, bagi)")
+            }
+        }
+</script>
+</body>
+</html>
+
+
