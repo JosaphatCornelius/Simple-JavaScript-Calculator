@@ -1,1 +1,0 @@
-alert("Hai, ini JavaScript loh!");
